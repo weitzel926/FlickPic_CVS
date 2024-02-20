@@ -1,6 +1,6 @@
 # FlickPic
 
-![Screenshot 2024-02-19 at 7 59 00 PM](https://github.com/weitzel926/FlickPic_CVS/assets/3514194/8a8568d3-d790-4d46-8f26-f876f9c4e733)  ![Screenshot 2024-02-19 at 8 00 01 PM](https://github.com/weitzel926/FlickPic_CVS/assets/3514194/9b8e3e63-cb69-4a58-ac9a-8448cf3d3c5c)
+![Screenshot 2024-02-19 at 7 59 00 PM](https://github.com/weitzel926/FlickPic_CVS/assets/3514194/8a8568d3-d790-4d46-8f26-f876f9c4e733)  ![Screenshot 2024-02-19 at 8 17 14 PM](https://github.com/weitzel926/FlickPic_CVS/assets/3514194/41fa2a16-0a1a-4369-a16e-b0c4d17b848d)
 
 **FlickPic** is a take home interview assignment.  It is an iPhone application that calls a known Flickr API.  This API returns the last twenty or so photos uploaded to Flickr that match the tags entered by the customer in the text edit field.  Each time a character is entered, the API is called and a spinny is displayed while the code retrieves the data.  Images are loaded asyncronously into a photo grid and display a solid gray placeholder while the image is being loaded or if it fails.  If the customer taps on an image, they are taken to a details page.  The details page shows the image title (trimmed off at two lines because there are some really long titles out there), the image itself, the author, the published date, and the description.
 
