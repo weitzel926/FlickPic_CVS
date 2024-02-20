@@ -20,7 +20,7 @@ struct DetailView: View {
             
             AsyncImage(url: photo.photoURL)
             NameValueLabel(name: "Author:", value: photo.author)
-            NameValueLabel(name: "Date Taken:", value: "\(photo.dateTakenString)")
+            NameValueLabel(name: "Date Published:", value: "\(photo.datePublishedString)")
             Divider()
             Color.clear
                 .overlay() {
@@ -81,11 +81,11 @@ struct WebView: UIViewRepresentable {
 #Preview {
     guard let link = URL(string: "https://picsum.photos/300/200"),
           let mediaLink = URL(string: "https://picsum.photos/300/200"),
-          let dateTaken = Date.createDate(month: 12, day: 25, year: 2023) else {
+          let datePublished = Date.createDate(month: 12, day: 25, year: 2023) else {
         fatalError("Could not create URLs, should never happen")
     }
     
-    let photo = Photo.fixture(link: link, mediaLink: mediaLink, dateTaken: dateTaken)
+    let photo = Photo.fixture(link: link, mediaLink: mediaLink, datePublished: datePublished)
     return DetailView(photo: photo)
 }
 

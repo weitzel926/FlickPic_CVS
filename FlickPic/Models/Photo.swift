@@ -11,9 +11,9 @@ struct Photo: Codable, Hashable {
     let title: String
     let link: URL
     let media: Media
-    let date_taken: Date
+    let date_taken: String
     let description: String
-    let published: String
+    let published: Date
     let author: String
     let tags: String
     
@@ -25,10 +25,10 @@ struct Photo: Codable, Hashable {
         return media.m
     }
     
-    var dateTakenString: String {
+    var datePublishedString: String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateStyle = .medium
         
-        return dateFormatter.string(from: date_taken)
+        return dateFormatter.string(from: published)
     }
 }

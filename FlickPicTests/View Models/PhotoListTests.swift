@@ -19,12 +19,12 @@ final class PhotoListTests: XCTestCase {
         
         guard let link = URL(string: "https://picsum.photos/300/200"),
               let mediaLink = URL(string: "https://picsum.photos/300/200"),
-              let dateTaken = Date.createDate(month: 12, day: 25, year: 2023) else {
+              let datePublished = Date.createDate(month: 12, day: 25, year: 2023) else {
             XCTFail("should never happen")
             return
         }
         
-        fakePhoto = Photo.fixture(link: link, mediaLink: mediaLink, dateTaken: dateTaken)
+        fakePhoto = Photo.fixture(link: link, mediaLink: mediaLink, datePublished: datePublished)
     }
     
     @MainActor func testGetFlickrData_emptyKey() {
