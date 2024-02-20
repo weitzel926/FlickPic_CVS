@@ -15,7 +15,11 @@ struct FlickPicView: View {
     var body: some View {
         NavigationStack {
             VStack {
-                TextEntryBar(placeholderText: "Search for photos", searchTerm: $searchTerm)                    .onChange(of: searchTerm) {
+                Text("FlickPic")
+                    .font(.title2)
+                    .fontWeight(.semibold)
+                TextEntryBar(placeholderText: "Search for photos", searchTerm: $searchTerm)
+                    .onChange(of: searchTerm) {
                         photoList.loadPhotos(key: searchTerm)
                     }
                 ZStack {
@@ -25,7 +29,6 @@ struct FlickPicView: View {
                 }
             }
             .padding()
-            .navigationTitle("FlickPic")
             .alert(photoList.lastError ?? "", isPresented: $photoList.showError) {
                 Button("OK", role: .cancel) {
                     photoList.clearError()
@@ -75,7 +78,6 @@ struct PhotoGridView: View {
                         DetailView(photo: photo)
                     } label: {
                         AsyncImageCell(url: photo.photoURL)
-                            .accessibilityLabel(photo.title)
                     }
                 }
             }
