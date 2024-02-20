@@ -1,0 +1,36 @@
+{
+  "configurations" : [
+    {
+      "id" : "D7B8F0D2-7A3E-450F-9A1D-D85668F893BB",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:FlickPic.xcodeproj",
+      "identifier" : "5E0FCDBD2B8422540098D443",
+      "name" : "FlickPic"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:FlickPic.xcodeproj",
+        "identifier" : "5E0FCDCD2B8422570098D443",
+        "name" : "FlickPicTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:FlickPic.xcodeproj",
+        "identifier" : "5E0FCDD72B8422570098D443",
+        "name" : "FlickPicUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

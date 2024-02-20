@@ -60,6 +60,7 @@
 		5E0FCE032B8426AC0098D443 /* PhotoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTests.swift; sourceTree = "<group>"; };
 		5E0FCE062B8429E40098D443 /* PhotoListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListTests.swift; sourceTree = "<group>"; };
 		5E0FCE092B84412A0098D443 /* FlickrResultFixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrResultFixture.swift; sourceTree = "<group>"; };
+		5E0FCE0B2B855BBE0098D443 /* FlickPic.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = FlickPic.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +91,7 @@
 		5E0FCDB52B8422540098D443 = {
 			isa = PBXGroup;
 			children = (
+				5E0FCE0B2B855BBE0098D443 /* FlickPic.xctestplan */,
 				5E0FCDC02B8422540098D443 /* FlickPic */,
 				5E0FCDD12B8422570098D443 /* FlickPicTests */,
 				5E0FCDDB2B8422570098D443 /* FlickPicUITests */,
