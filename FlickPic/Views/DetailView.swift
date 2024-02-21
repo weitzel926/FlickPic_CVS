@@ -18,7 +18,7 @@ struct DetailView: View {
                 .multilineTextAlignment(.center)
                 .font(.title)
             
-            AsyncImage(url: photo.photoURL)
+            HeadlineImage(url: photo.photoURL)
             NameValueLabel(name: "Author:", value: photo.author)
             NameValueLabel(name: "Date Published:", value: "\(photo.datePublishedString)")
             Divider()
@@ -41,7 +41,7 @@ struct HeadlineImage: View {
                 .aspectRatio(contentMode: .fit)
                 .frame(maxWidth: 250, maxHeight: 250)
         } placeholder: {
-            RoundedRectangle(cornerRadius: 10)
+            Rectangle()
                 .fill(.gray)
                 .frame(maxWidth: 250, maxHeight: 250)
         }
